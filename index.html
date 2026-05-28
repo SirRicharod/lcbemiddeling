@@ -1,10 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl-BE">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>lcbemiddeling</title>
+    <title>LCBemiddelingen</title>
+
+    <!-- Meta tags for premium SEO -->
+    <meta name="description"
+        content="Stephanie Tas is een erkend familiaal bemiddelaar in familiezaken te Hasselt. Begeleiding van A tot Z bij scheidingen en ouderschap in een vertrouwelijk traject.">
+    <meta name="robots" content="index, follow">
+
+    <!-- Open Graph Meta Tags -->
+    <meta property="og:title" content="Stephanie Tas | Erkend Bemiddelaar in familiezaken">
+    <meta property="og:description"
+        content="Samen op zoek naar een duurzame oplossing voor jullie conflict. Begeleiding bij partnerscheiding, ouderschap en familiezaken.">
+    <meta property="og:image"
+        content="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800">
+    <meta property="og:url" content="http://localhost">
+    <meta property="og:type" content="website">
 
     <!-- Bootstrap CDN -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -13,60 +27,274 @@
     <!-- Bootstrap Icons CDN -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&display=swap"
-        rel="stylesheet">
-
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="template.css">
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <a class="navbar-brand d-flex align-items-center gap-2 fw-semibold" href="#">
-                <i class="bi bi-chat-fill"></i>
+    <!-- 1. Header / Navigation -->
+    <header class="header-outer" id="header-outer">
+        <div class="custom-container nav-container">
+            <a href="#hero" class="logo-link text-decoration-none">
+                <span class="logo-text">[Naam / Logo]</span>
             </a>
 
-            <button class="navbar-toggler border-0 shadow-none ms-auto" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <!-- Mobile Hamburger Menu Toggle -->
+            <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Open menu">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
             </button>
 
-            <div class="collapse navbar-collapse mt-3 mt-lg-0 w-100 w-lg-auto" id="navbarNav">
-                <ul
-                    class="navbar-nav ms-lg-auto flex-column flex-lg-row align-items-start align-items-lg-center gap-2 gap-lg-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Features</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Pricing</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Navigation Menu -->
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#hero" class="nav-link">Home</a></li>
+                <li><a href="#diensten" class="nav-link">Diensten</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
         </div>
-    </nav>
+    </header>
 
-    <main class="min-vh-100 d-flex align-items-center justify-content-center px-3">
-        <blockquote class="text-center d-inline-block m-0 p-4 p-md-5">
-            <q>Between what is said and not meant, and what is meant and not said, most of love is lost.</q>
-            <cite class="d-inline-block text-center mt-3">Kahlil Gibran</cite>
-        </blockquote>
+    <!-- Main Content -->
+    <main>
+
+        <!-- 2. Hero Section (Warm Ivory Background / Sage Side Split) -->
+        <section id="hero" class="hero-section">
+            <div class="custom-container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 hero-text-col">
+                        <span class="section-subtitle">Stephanie Tas</span>
+                        <h1 class="section-title text-dark">Bemiddelaar</h1>
+                        <div class="title-divider"></div>
+                        <div class="hero-description">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin nec porta ligula. Ut enim
+                                ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat.</p>
+                            <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                                officia deserunt mollit anim id est laborum.</p>
+                            <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque
+                                laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi
+                                architecto beatae vitae dicta sunt explicabo.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mt-4 mt-lg-0">
+                        <div class="hero-image-wrap">
+                            <img class="hero-img"
+                                src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=800"
+                                alt="Stephanie Tas - Bemiddelaar">
+                        </div>
+                    </div>
+                </div>
+                <div class="hero-cta-wrap">
+                    <a href="#contact" class="btn-premium btn-sage">Maak een afspraak</a>
+                </div>
+            </div>
+        </section>
+        <br>
+        <br>
+        <br>
+        <!-- 3. Kahlil Gibran Blockquote Section (Unique Brand Quote) -->
+        <section class="quote-section">
+            <div class="custom-container">
+                <blockquote class="custom-blockquote">
+                    <q>"Between what is said and not meant, and what is meant and not said, most of love is lost."</q>
+                    <cite>Kahlil Gibran</cite>
+                </blockquote>
+            </div>
+        </section>
+
+        <!-- 5. Services Section (Light Background with Asymmetrical Card Configuration) -->
+        <section id="diensten" class="section-padding section-light">
+            <div class="custom-container">
+                <div class="text-center">
+                    <span class="section-subtitle">Wat ik doe</span>
+                    <h2 class="section-title">Waar ik <span>jou mee kan helpen.</span></h2>
+                    <div class="title-divider center"></div>
+                </div>
+
+                <div class="services-grid">
+                    <!-- Service 1 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrap"><i class="bi bi-journal-check"></i></div>
+                        <h3 class="service-title">Scheidingsbemiddeling</h3>
+                        <p class="service-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            <br><br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+
+                    <!-- Service 2 -->
+                    <div class="service-card">
+                        <div class="service-icon-wrap"><i class="bi bi-balloon"></i></div>
+                        <h3 class="service-title">Ouderschapsbemiddeling</h3>
+                        <p class="service-desc">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
+                            labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+                            laboris nisi ut aliquip ex ea commodo consequat.
+                            <br><br>
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                            mollit anim id est laborum.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 6. Contact Section (Warm Linen Background / Flat Form) -->
+        <section id="contact" class="section-padding section-linen">
+            <div class="custom-container" style="max-width: 600px;">
+                <div class="text-center">
+                    <span class="section-subtitle">Contact</span>
+                    <h2 class="section-title">Vragen?</h2>
+                    <div class="title-divider center"></div>
+                </div>
+
+                <form class="contact-form" action="#" method="POST">
+                    <div class="form-group mb-4">
+                        <label for="name" class="form-label">Naam</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Jouw naam" required>
+                    </div>
+
+                    <div class="form-group mb-4">
+                        <label for="email" class="form-label">E-mailadres</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Jouw e-mailadres"
+                            required>
+                    </div>
+
+                    <div class="form-group mb-5">
+                        <label for="message" class="form-label">Bericht</label>
+                        <textarea id="message" name="message" class="form-input" rows="5" placeholder="Jouw bericht..."
+                            required></textarea>
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn-premium btn-sage w-100">Verzend bericht</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+
     </main>
 
+    <!-- Footer -->
+    <footer class="footer-outer">
+        <div class="custom-container">
+            <div class="row">
+                <!-- Col 1: Branding Logo / Text -->
+                <div class="col-md-4 footer-col">
+                    <div class="footer-logo-wrap">
+                        <span class="logo-text text-light">[Naam / Logo]</span>
+                    </div>
+                </div>
 
+                <!-- Col 2: Adres -->
+                <div class="col-md-4 footer-col">
+                    <h4 class="footer-title">Adres</h4>
+                    <ul class="footer-links">
+                        <li>[Straatnaam + Huisnummer]</li>
+                        <li>[Postcode + Gemeente]</li>
+                        <li>[BTW-nummer]</li>
+                    </ul>
+                </div>
+
+                <!-- Col 3: Contact -->
+                <div class="col-md-4 footer-col">
+                    <h4 class="footer-title">Contact</h4>
+                    <ul class="footer-links">
+                        <li><a href="mailto:[E-mailadres]">[E-mailadres]</a></li>
+                        <li><a href="tel:[Telefoonnummer]">[Telefoonnummer]</a></li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Copyright Bar -->
+            <div class="copyright-wrap">
+                <p class="copyright-text">&copy; 2026 Stephanie Tas. Alle rechten voorbehouden.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="to-top" class="to-top-btn" aria-label="Terug naar boven">
+        <i class="bi bi-arrow-up-short" style="font-size: 1.6rem; line-height: 1;"></i>
+    </button>
+
+    <!-- Bootstrap Bundle with Popper JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous">
         </script>
-    <script src="app.js"></script>
 
+    <!-- Custom Vanilla JavaScript Interactive Controls -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+
+            // 1. Sticky Navigation Bar Scrolled Effect
+            const headerOuter = document.getElementById('header-outer');
+
+            function toggleHeaderState() {
+                if (window.scrollY > 50) {
+                    headerOuter.classList.add('scrolled');
+                } else {
+                    headerOuter.classList.remove('scrolled');
+                }
+            }
+
+            window.addEventListener('scroll', toggleHeaderState);
+            toggleHeaderState(); // Check initial scroll state
+
+            // 2. Mobile Responsive Menu Hamburger Toggle
+            const mobileNavToggle = document.getElementById('mobile-nav-toggle');
+            const navMenu = document.getElementById('nav-menu');
+
+            mobileNavToggle.addEventListener('click', function () {
+                mobileNavToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+
+                // Prevent scroll when mobile menu is active
+                if (navMenu.classList.contains('active')) {
+                    document.body.style.overflow = 'hidden';
+                } else {
+                    document.body.style.overflow = '';
+                }
+            });
+
+            // Close mobile menu when a nav link is clicked
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.addEventListener('click', function () {
+                    mobileNavToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // 3. Back to Top Button Interaction
+            const toTopBtn = document.getElementById('to-top');
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 400) {
+                    toTopBtn.classList.add('visible');
+                } else {
+                    toTopBtn.classList.remove('visible');
+                }
+            });
+
+            toTopBtn.addEventListener('click', function () {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 
 </html>
